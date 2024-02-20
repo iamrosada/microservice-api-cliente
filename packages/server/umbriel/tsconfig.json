@@ -1,0 +1,17 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@modules/*": ["./src/modules/*"],
+      "@shared/*": ["@server/shared/src/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@config/*": ["./src/config/*"]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}
